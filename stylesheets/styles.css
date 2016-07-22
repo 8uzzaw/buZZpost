@@ -1,0 +1,48 @@
+input {
+    color: black;
+    font-family: NexaLight;
+}
+
+.error {
+    color: red;
+}
+
+.container, .jumbotron {
+    background: transparent;
+}
+
+@font-face {
+    font-family: NexaLight;
+    src: url("NexaLight.otf");
+}
+
+body {
+	background-image: url("the_ghost_nebula_by_tylercreatesworlds-d4zb5y3.jpg");
+    background-attachment: fixed;
+    background-position: right top;
+	font-family: NexaLight;
+}
+
+.panel {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.post-heading {
+    position: relative;
+    border-bottom: 3px solid #666;
+    opacity: 1.0;
+}
+
+
+.post-title {
+	font-weight: bolder;
+	font-size: 24px;
+	opacity: 1.0;
+}
+
+.post-created {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    opacity: 1.0;
+}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<center>
+<div style="font-family: NexaLight; color: white;">
+	<div class="container">
+		<div class="jumbotron">
+			<a style="text-decoration: none; color: yellow;"><h1>Login</h1></a>
+		</div>
+	</div>
+	<form method="post" action="/login">
+		<div style="margin-bottom: 10px;">
+			<h3>Username<input type="text" name="username" style="position: relative; left: 50px;"></input></h3> 
+		<div>
+			<h3>Password
+			<input type="password" name="password" style="position: relative; left: 49px;"></input></h3>
+		</div>
+		<br>
+		<button type="submit" class="btn btn-sm btn-danger">Login</button>
+	</form>
+	<h4>or <a href="/signup" style="text-decoration: none; color: yellow; font-family: NexaLight;"><b>Create an account</b></a></h4>
+	<div class="error">{{error}}</div>
+</div>
+</center>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<center>
+<div style="color: white">	
+	<h2>New Post</h2>
+	<form action="/newpost" method="post">
+	<h3>title</h3>
+	<input type="text" name="title" value="{{title}}" style="color: black; width: 500px;">
+	<h3>body</h3>
+	<textarea name="body" value="{{body}}" style="color: black; width: 500px; height: 300px;"></textarea>
+	<br>
+	<input class = "btn btn-md btn-danger" type="submit">
+	</form>
+</div>
+	<h3 style="color: yellow;">{{error}}</h3>
+</center>
+{% endblock %}
